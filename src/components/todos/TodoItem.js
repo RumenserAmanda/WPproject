@@ -6,8 +6,8 @@ import { BsFillTrashFill } from "react-icons/bs";
 
 function TodoItem({ todo, dispatch }) {
   return (
-  <body>
-    <div className="container bg-info bg-secondary " >
+
+    <div className="container bg-info " >
       
       <Table className="position-relative table table-sm" striped bordered hover >
   
@@ -22,7 +22,7 @@ function TodoItem({ todo, dispatch }) {
       </Table>
     
     </div>
-  </body>
+
 
   );
 }

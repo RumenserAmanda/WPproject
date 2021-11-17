@@ -39,10 +39,10 @@ function Todos() {
 
   return (
 
-  <div class="p-3 mb-2 bg-dark">
-    <div className = "container-lg text-center">
-      <h1 class="fst-italic text-primary">What's the plan for today?</h1>
-      <div class="alert alert-primary fst-italic" role="alert">
+  <div className="p-3 mb-2 bg-dark">
+    <div className = "text-center">
+      <h1 className="fst-italic text-primary">What's the plan for today?</h1>
+      <div className="alert alert-primary fst-italic" role="alert">
         Do not procrastination!
       </div>
   
@@ -50,7 +50,7 @@ function Todos() {
         <input type="text" value={text} onChange={(event) => setText(event.target.value)} />
         <Button type="Submit" variant="info">Add Todo</Button>
       </form>
-
+      
       {
         todos.map((todo) => {
           return <TodoItem key={todo.id} todo={todo} dispatch={dispatch} />

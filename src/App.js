@@ -42,7 +42,7 @@ import Todos from './components/todos/Todos';
 
 function App() {
   return(
-    <div>
+    <div className="container">
       <Todos />
     </div>
   );
